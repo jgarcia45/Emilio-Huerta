@@ -60,8 +60,19 @@
   
 
  <!--Volunteer section-------------------------------------------------------------------------------------------------->
- <div class="container my-5">
 
+<div class="container my-5 py-5 z-depth-1">
+
+
+  <!--Section: Content-->
+  <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+        
   <style>
     .border-top {
       border-top: 5px solid #33b5e5 !important;
@@ -69,75 +80,85 @@
       border-top-right-radius: .25rem !important;
     }
   </style>
+        <h3 class="font-weight-bold">Volunteer</h3>
 
-  <!--Section: Content-->
-  <section class="text-center dark-grey-text mb-5">
-
-    <div class="card">
-      <div class="card-body rounded-top border-top p-5">
-
-        <!-- Section heading -->
-        <h3 class="font-weight-bold my-4">Volunteer</h3>
-        <!-- Section description -->
-        <p class="font-weight-light mx-auto mb-4 pb-2">If you'd like to volunteer in any capacity this is where you can contact us.<br> There are many volunteer tasks that'd we'd love to get some help with such as:</p>
+        <p >If you'd like to volunteer in any capacity this is where you can contact us.<br> There are many volunteer tasks that'd we'd love to get some help with such as:</p>
         <ul>
           <li>Knock on Door</li>
           <li>Phone Banking</li>
           <li>Envelop Sealing</li>
           <li>Host an event</li>
-          <li>Anything you can think of!</li>
+          <li>Message(optional)</li>
         </ul>
 
-        <form class="mb-4 mx-md-5" action="">
+      </div>
+      <!--Grid column-->
 
-          <div class="row">
-            <div class="col-md-6 mb-4">
+      <!--Grid column-->
+      <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
 
-              <!-- Name -->
-              <input type="text" id="name" class="form-control" placeholder="Name">
+        <!--Grid row-->
+        <div class="row">
 
+          <!--Grid column-->
+          <div class="col-md-6">
+
+            <!-- Material outline input -->
+            <div class="md-form md-outline mb-0">
+              <input type="text" id="form-first-name" class="form-control">
+              <label for="form-first-name">First name</label>
             </div>
-            <div class="col-md-6 mb-4">
 
-              <!-- Email -->
-              <input type="email" id="email" class="form-control" placeholder="Email">
-
-            </div>
           </div>
+          <!--Grid column-->
 
-          <div class="row">
-            <div class="col-md-12 mb-4">
+          <!--Grid column-->
+          <div class="col-md-6">
 
-              <!-- Subject -->
-              <input type="text" id="subject" class="form-control" placeholder="What task you'd like to help with">
-
+            <!-- Material outline input -->
+            <div class="md-form md-outline mb-0">
+              <input type="text" id="form-last-name" class="form-control">
+              <label for="form-last-name">Last name</label>
             </div>
+
           </div>
+          <!--Grid column-->
 
-          <div class="row">
-            <div class="col-md-12">
+        </div>
+        <!--Grid row-->
 
-              <div class="form-group mb-4">
-                <textarea class="form-control rounded" id="message" rows="3"
-                  placeholder="Message(optional)"></textarea>
-              </div>
+        <!-- Material outline input -->
+        <div class="md-form md-outline mt-3">
+          <input type="email" id="form-email" class="form-control">
+          <label for="form-email">E-mail</label>
+        </div>
 
-              <div class="text-center">
-                <button type="submit" class="btn btn-info btn-md">Submit</button>
-              </div>
+        <!-- Material outline input -->
+        <div class="md-form md-outline">
+          <input type="text" id="form-subject" class="form-control">
+          <label for="form-subject">What task you'd like to help with</label>
+        </div>
 
-            </div>
-          </div>
+        <!--Material textarea-->
+        <div class="md-form md-outline mb-3">
+          <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
+          <label for="form-message">Anymore information you'd like to share</label>
+        </div>
 
-        </form>
+        <button type="submit" class="btn btn-info btn-sm ml-0">Submit</button>
 
       </div>
+      <!--Grid column-->
+
     </div>
+    <!--Grid row-->
+
+
   </section>
   <!--Section: Content-->
 
-</div>
 
+</div>
 <!-- End of Volunteer section------------------------------------------------------------------------------------------------>
 
 
