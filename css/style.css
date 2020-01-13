@@ -16,6 +16,15 @@
     text-align: center;
 }
 
+.instagram-color {
+    color: pink;
+}
+
+.submit-button {
+    color: white;
+    background-color: #000080;
+}
+
 .volunteer-text {
     font-size: large;
 }
@@ -23,3 +32,40 @@
 .footer-color {
     background-color: #000080;
 }
+
+/* Social Media Buttons for Contact Us */
+
+/* Style all font awesome icons */
+.newfa {
+    padding: 20px;
+    font-size: 30px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .newfa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .newfa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .newfa-instagram {
+    background: #be0653;
+    color: white;
+  }
+
