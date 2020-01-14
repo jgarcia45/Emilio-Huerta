@@ -1,6 +1,21 @@
+@media (max-width: 767px) {
+    .mobile-nofixed {
+        position: relative;
+        top: auto;
+        max-height: none;
+        margin: 0;
+
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
 .navbar-color {
     background-color: #000080;
 }
+
 .navbar-height {
     /*height: 105px;*/
 }
@@ -14,6 +29,11 @@
 }
 
 .photo-border {
+    border-color: gold;
+}
+
+.border-container {
+    border-style: ridge;
     border-color: gold;
 }
 
