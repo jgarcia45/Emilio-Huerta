@@ -9,6 +9,20 @@
     font-size: x-large;
 }
 
+.index-text {
+    color: #000080;
+}
+
+.photo-border {
+    border-color: gold;
+}
+
+.img-size {
+    float: center;
+    width: auto;
+    height: 400px;
+}
+
 .button-width-style {
     width: 200px;
  
