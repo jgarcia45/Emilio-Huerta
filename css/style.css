@@ -24,6 +24,12 @@
     font-size: x-large;
 }
 
+.line-header {
+    border-color: gold;
+    width: 200px;
+    border-top: 2px solid gold;
+}
+
 .index-text {
     color: #000080;
 }
