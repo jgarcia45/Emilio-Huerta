@@ -96,7 +96,7 @@
       </div>
 
       <!--Grid Row-->
-      <form class="" action="">
+      <form class="" name="volunteerForm" id="volunteerForm"  action="volunteer.php" method="POST">
         <!--Grid row-->
         <div class="row">
 
@@ -107,38 +107,34 @@
             <div class="row">
 
               <!--Grid column-->
-              <div class="col-md-6">
+              <div class="col">
 
                 <!-- Material outline input -->
                 <div class="md-form md-outline mb-0">
-                  <input type="text" id="form-first-name" class="form-control">
-                  <label for="form-first-name">First name</label>
+                  <input type="text" id="name" name="name" class="form-control">
+                  <label for="name">Name</label>
                 </div>
 
               </div>
               <!--Grid column-->
 
               <!--Grid column-->
-              <div class="col-md-6">
-
-                <!-- Material outline input -->
-                <div class="md-form md-outline mb-0">
-                  <input type="text" id="form-last-name" class="form-control">
-                  <label for="form-last-name">Last name</label>
-                </div>
-
-              </div>
+          
               <!--Grid column-->
 
             </div>
             <!--Grid row-->
-
+            <div class="md-form md-outline mb-0">
+              <input type="email" id="email" name="email" class="form-control">
+              <label for="email">E-mail</label>
+            </div> 
+            
             <div class="row">
               <div class="col-md-6">
 
                 <!-- Phone -->
                 <div class="md-form md-outline mb-0">
-                  <input type="tel" id="Phone" class="form-control">
+                  <input type="tel" id="Phone" name=Phone class="form-control">
                   <label for="Phone">Phone (Optional)</label>
                 </div>
 
@@ -147,8 +143,8 @@
 
                 <!-- Prefered Option -->
                 <div class="md-form md-outline mb-0">
-                  <select class="browser-default custom-select select-font">
-                    <option value="" disabled selected>Text OK?</option>
+                  <select class="browser-default custom-select select-font" id="textok" name="textok">
+                    <option value="" disabled selected>Text Ok?</option>
                     <option value="1">Yes</option>
                     <option value="2">No</option>
                   </select>
@@ -157,24 +153,21 @@
             </div>
 
             <!-- Material outline input -->
-            <div class="md-form md-outline mb-0">
-              <input type="email" id="form-email" class="form-control">
-              <label for="form-email">E-mail</label>
-            </div>
+           
 
             <!-- Material outline input -->
             <div class="md-form md-outline">
-              <input type="text" id="form-subject" class="form-control">
-              <label for="form-subject">What task you'd like to help with</label>
+              <input type="text" id="subject" name="subject" class="form-control">
+              <label for="subject">What task you'd like to help with</label>
             </div>
 
             <!--Material textarea-->
             <div class="md-form md-outline mb-3">
-              <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
-              <label for="form-message">Anymore information you'd like to share</label>
+              <textarea id="message" name="message" class="md-textarea form-control" rows="3"></textarea>
+              <label for="message">Anymore information you'd like to share</label>
             </div>
 
-            <button type="submit" class="btn submit-button btn-lg ml-0">Submit</button>
+            <button type="button" class="btn submit-button btn-lg ml-0" onclick="volunteerSubmit()">Submit</button>
 
           </div>
           <!--Grid column-->
@@ -227,7 +220,7 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/VolunteerValidation.js"></script>
 
 
 
