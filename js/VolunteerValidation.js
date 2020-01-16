@@ -1,16 +1,15 @@
-function ValidateContactUsForm() {
+function volunteerSubmit() {
     var name = document.getElementById('name').value;
     document.getElementById('name').className = "form-control is-valid"
-    if (name == "") {
-        
-        document.getElementById('name').placeholder = "Name cannot be empty";
+   
+    if (name == "") {        
         document.getElementById('name').className = "form-control is-invalid"
         return false;
     }
     var email = document.getElementById('email').value;
     document.getElementById('email').className = "form-control is-valid"
     if (email == "") {
-        document.getElementById('email').placeholder = "Email cannot be empty";
+        
         document.getElementById('email').className = "form-control is-invalid"
         return false;
     } else {
@@ -26,7 +25,7 @@ function ValidateContactUsForm() {
     console.log(document.getElementById('textok').value);
     if (phone !== "") {
         document.getElementById('textok').className="browser-default custom-select"
-        if (document.getElementById('textok').value !== "Text Ok?") {
+        if (document.getElementById('textok').value !== "") {
             document.getElementById('textok').className="browser-default custom-select is-valid"
         } else {
             document.getElementById('textok').className="browser-default custom-select is-invalid"
@@ -37,14 +36,13 @@ function ValidateContactUsForm() {
     var subject = document.getElementById('subject').value;
     document.getElementById('subject').className = "form-control is-valid"
     if (subject == "") {
-        document.getElementById('subject').placeholder = "Subject cannot be empty";
+      
         document.getElementById('subject').className = "form-control is-invalid"
         return false;
     }
     var message = document.getElementById('message').value;
     document.getElementById('message').className = "form-control is-valid"
     if (message == "") {
-        document.getElementById('message').placeholder = "Message cannot be empty";
         document.getElementById('message').className = "form-control is-invalid"
         return false;
     }
@@ -68,12 +66,12 @@ function ValidateContactUsForm() {
 
             $('#status').text(data.message);
             if (data.code) //If mail was sent successfully, reset the form.
-                $('#contact-us-form').closest('form').find("input[type=text], textarea").val("");
+                $('#volunteerForm').closest('form').find("input[type=text], textarea").val("");
         },
         error: function (jqXHR, textStatus, errorThrown) {
             $('#status').text(jqXHR);
         }
     });
 
-    document.getElementById('contact-us-form').submit();
+    document.getElementById('volunteerForm').submit();
 }
