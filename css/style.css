@@ -87,6 +87,14 @@
     font-weight: bold;
 }
 
+.landingpage-font {
+    color: #000080;
+}
+
+.landingpage-font2 {
+    color: gold;
+}
+
 .select-font {
     color: grey;
     font-weight: 300;
