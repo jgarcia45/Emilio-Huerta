@@ -69,6 +69,25 @@
     font-size: large;
 }
 
+.option-textsize {
+    font-size: x-large;
+}
+.radio-textsize {
+    font-size: large;
+}
+.radio-buttonsize {
+    transform: scale(1);
+}
+
+.landingpage-text {
+    font-weight: bold;
+}
+
+.select-font {
+    color: grey;
+    font-weight: 300;
+}
+
 .footer-color {
     background-color: #000080;
 }
