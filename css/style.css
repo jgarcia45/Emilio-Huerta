@@ -1,11 +1,12 @@
 @media (max-width: 767px) {
-    .mobile-nofixed {
-        position: relative;
-        top: auto;
-        max-height: none;
-        margin: 0;
-
+    .mobile-jumbo{
+        height: auto;
     }
+    
+}
+.jumbotron-full-page {
+    min-height: calc(100vh);
+
 }
 
 .navbar-color {

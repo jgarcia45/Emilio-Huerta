@@ -22,7 +22,7 @@
 <body>
   <!--Navbar -->
   <nav
-    class=" fixed-top scrolling-navbar navbar navbar-expand-xl navbar-dark navbar-height navbar-text-style navbar-color mobile-nofixed">
+    class=" sticky-top scrolling-navbar navbar navbar-expand-xl navbar-dark navbar-height navbar-text-style navbar-color ">
     <a class="navbar-brand" href="index.html">
       <img src="img/Huerta/Huerta_logo_navy(3rd edit).png" height="50" alt="image not loaded">
     </a>
@@ -59,65 +59,34 @@
   </nav>
   <!--/.Navbar -->
   <!-- Start your project here-->
-
-  <!--Cover Photo----------------------------------------------------------->
-  <style>
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-      padding-top: auto;
-    }
-  </style>
-
-  <!-- Main navigation -->
-  <header>
-
-    <!-- Full Page Intro -->
-    <div class="view grey lighten-1">
-      <!-- Mask & flexbox options-->
-      <div class="mask">
-        <!-- Content -->
-        <div class="container h-100">
-          <!--Grid row-->
-          <div class="row align-items-center   h-100">
-            <!--Grid column-->
-
-            <div class="col-md-6 mt-md-6">
-              <h1 class="mb-4 landingpage-text">Vote for Emilio Huerta</span><br>for
-                Supervisor</span> in District 4.</h1>
-              <p class="mb-4 pb-2 dark-grey-text">As a civil rights attorney, Emilio has a proven record of establishing
-                affordable housing and medical clinics for low income families. He has worked to create non-profit
-                organizations, credit unions and businesses that improve the lives of our communities.</p>
-
-            
-
-              <a href="https://secure.actblue.com/donate/votehuerta.org"><button type="button"
-                  class="btn submit-button btn-rounded btn-lg ml-md-0">Donate</button></a>
-              <a href="MeetEmilio.html"><button type="button" class="btn btn-outline-grey btn-rounded btn-lg">About
-                  Emilio</button></a>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6">
-              <img src="img/Huerta/Huerta-13_square.jpg"
-                class="img-fluid rounded-circle img-thumbnail z-depth-1 photo-border" alt="sample image">
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
+  <div class=" jumbotron jumbotron-fluid jumbotron-full-page view grey lighten-1">
+    <div class="container">
+      <div class="row align-item-center">
+        <!--Grid column-->
+        <div class="col-lg-6 order-lg-last mt-md-5 pt-md-5">
+          <img src="img/Huerta/Huerta-13_square.jpg"
+            class="img-fluid rounded-circle img-thumbnail z-depth-1 photo-border" alt="sample image">
         </div>
-        <!-- Content -->
-      </div>
-      <!-- Mask & flexbox options-->
-    </div>
-    <!-- Full Page Intro -->
+        <div class="col-lg-6 order-lg-first mt-md-5 pt-md-5">
+          <h1 class="mb-4 landingpage-text">Vote for Emilio Huerta</span><br>for
+            Supervisor</span> in District 4.</h1>
+          <p class="mb-4 pb-2 dark-grey-text">As a civil rights attorney, Emilio has a proven record of establishing
+            affordable housing and medical clinics for low income families. He has worked to create non-profit
+            organizations, credit unions and businesses that improve the lives of our communities.</p>
 
-  </header>
-  <!-- Main navigation -->
-  <!--End of Cover-------------------------------------------------->
+
+
+          <a href="https://secure.actblue.com/donate/votehuerta.org"><button type="button"
+              class="btn submit-button btn-rounded btn-lg ml-md-0">Donate</button></a>
+          <a href="MeetEmilio.html"><button type="button" class="btn btn-outline-grey btn-rounded btn-lg">About
+              Emilio</button></a>
+        </div>
+        <!--Grid column-->
+
+
+      </div>
+    </div>
+  </div>
 
   <!--Mailing List------------------------------------------>
   <div class="container my-5 z-depth-1 container-spacing border-container">
@@ -200,7 +169,7 @@
 
           <p class=" mx-md-5">Learn how you can be a part of Emilio's campaign.</p>
 
-          <a class="btn submit-button btn-md" href="#" role="button">Volunteer</a>
+          <a class="btn submit-button btn-md" href="Volunteer.html" role="button">Volunteer</a>
 
         </div>
         <!--Grid column-->
@@ -212,7 +181,7 @@
 
           <p class=" mx-md-5">Contact us if you have any questions or any requests.</p>
 
-          <a class="btn submit-button btn-md" href="#" role="button">Contact US</a>
+          <a class="btn submit-button btn-md" href="ContactUs.html"  role="button">Contact US</a>
 
         </div>
         <!--Grid column-->
@@ -235,21 +204,25 @@
   <div class="container my-5 py-5">
 
     <!--Section: Content-->
-    <section class="px-md-5 mx-md-5 text-center dark-grey-text">
+    <div class="row">
+      <div class="col">
+        <section class="px-md-5 mx-md-5 text-center dark-grey-text">
 
-      <p class="font-weight-bold">
-        <font size="+2">Follow us on:</font>
-      </p>
+          <p class="font-weight-bold">
+            <font size="+2">Follow us on:</font>
+          </p>
 
-      <!--Facebook-->
-      <a href="https://www.facebook.com/votehuerta.org/?modal=admin_todo_tour" class="mx-3" role="button"><i
-          class="fa fa-facebook newfa newfa-facebook fa-5x" aria-hidden="true"></i></a>
-      <a href="https://twitter.com/votehuerta" class="mx-3" role="button"><i
-          class="fa fa-twitter newfa newfa-twitter fa-5x" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/vote_huerta/" class="mx-3" role="button"><i
-          class="fa fa-instagram instagram-color newfa newfa-instagram fa-5x" aria-hidden="true"></i></a>
+          <!--Facebook-->
+          <a href="https://www.facebook.com/votehuerta.org/?modal=admin_todo_tour" class="mx-3" role="button"><i
+              class="fa fa-facebook newfa newfa-facebook fa-5x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/votehuerta" class="mx-3" role="button"><i
+              class="fa fa-twitter newfa newfa-twitter fa-5x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/vote_huerta/" class="mx-3" role="button"><i
+              class="fa fa-instagram instagram-color newfa newfa-instagram fa-5x" aria-hidden="true"></i></a>
 
-    </section>
+        </section>
+      </div>
+    </div>
     <!--Section: Content-->
 
   </div>
