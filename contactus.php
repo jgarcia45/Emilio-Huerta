@@ -35,7 +35,7 @@ if ($name === ''){
     }
 
 $content="From: $name \n Email: $email \n Message: $message \n Phone: $Phone Texting Ok: $textok"  ;
-$recipient = "harman2to1@gmail.com";
+$recipient = "EmiliosNewsletter@gmail.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 echo "Email sent!";
