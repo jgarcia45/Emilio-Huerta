@@ -1,4 +1,5 @@
 function ValidateContactUsForm() {
+
     var name = document.getElementById('name').value;
     document.getElementById('name').className = "form-control is-valid"
     if (name == "") {
@@ -23,7 +24,7 @@ function ValidateContactUsForm() {
     }
     
     var phone = document.getElementById('Phone').value;
-    console.log(document.getElementById('textok').value);
+    
     if (phone !== "") {
         document.getElementById('textok').className="browser-default custom-select"
         if (document.getElementById('textok').value !== "Text Ok?") {
@@ -54,9 +55,9 @@ function ValidateContactUsForm() {
         'name': $('input[name=name]').val(),
         'email': $('input[name=email]').val(),
         'subject': $('input[name=subject]').val(),
-        'message': $('textarea[name=message]').val(),
-        'Phone':$('input[name=Phone]').val(),
-        'textok':$('select[name=textok]').val()
+        'Phone': $('input[name=Phone]').val(),
+        'textok': $('select[name=textok]').val(),
+        'message': $('textarea[name=message]').val()
     };
 
 
@@ -75,5 +76,6 @@ function ValidateContactUsForm() {
         }
     });
 
-    document.getElementById('contact-us-form').submit();
+    window.alert("Email has been sent!");
+    location.reload();
 }

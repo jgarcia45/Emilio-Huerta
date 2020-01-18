@@ -34,9 +34,9 @@ if ($name === ''){
     die();
     }
 
-$content="From: $name \n Email: $email \n Message: $message \n Phone: $Phone Texting Ok: $textok"  ;
+$content="From: $name \n Email: $email \n Phone: $Phone \n Texting Ok: $textok \n Subject: $subject  \n Message: $message \n "  ;
 $recipient = "EmiliosNewsletter@gmail.com";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $content, $mailheader) or die("Error!");
+mail($recipient, "Contact Us Form Submission", $content, $mailheader) or die("Error!");
 echo "Email sent!";
 ?>
