@@ -28,11 +28,18 @@ function newsletter() {
             $('#status').text(data.message);
             if (data.code) //If mail was sent successfully, reset the form.
                 $('#news').closest('form').find("input[type=text], textarea").val("");
+
+            window.alert("You have signed up for the newsletter!");
+            location.reload();
         },
         error: function (jqXHR, textStatus, errorThrown) {
             $('#status').text(jqXHR);
+            window.alert("Email not sent. Try reloading the Page.")
         }
     });
 
-    document.getElementById('news').submit();
+
+   
+
+
 }
