@@ -107,7 +107,7 @@
         <div class="col-md-7 mb-lg-0 px-sm-1 mb-4">
 
           <!-- Form -->
-          <form class="" action="">
+          <form class="" action="newsletter.php">
 
             <!-- Section heading -->
             <h3 class="font-weight-bold my-3">Newsletter</h3>
@@ -116,11 +116,11 @@
               what Emilio Huerta is doing for the community!</p>
 
             <div class="input-group">
-              <input type="email" class="form-control" placeholder="Enter your email address"
+              <input type="email" id="news" name="news" class="form-control" placeholder="Enter your email address"
                 aria-label="Enter your email address" aria-describedby="button-addon2">
               <div class="input-group-append">
                 <button class="btn btn-md submit-button rounded-right m-0 px-3 py-2 z-depth-0 waves-effect"
-                  type="submit" id="button-addon2">Subscribe</button>
+                  type="submit" id="button-addon2" onclick="newsletter()">Subscribe</button>
               </div>
             </div>
             <small class="form-text black-text"><strong>* Leave your email address to be notified
@@ -246,7 +246,7 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/newsletter.js"></script>
 
 </body>
 
